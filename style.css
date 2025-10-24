@@ -191,7 +191,7 @@ hgroup h3 {
     flex-direction: column;
 }
 
-.text div .btn {
+.text div .btn,.feature .text .btn {
     padding: 1rem 3rem;
     border: 1px solid #0b5ebd;
     color: #0468D7;
@@ -227,13 +227,13 @@ hgroup h3 {
     background: linear-gradient(to top right, #FCFCE2, #F5FBFE);
 }
 
-#consultants-feature .feature .text hgroup {
+#consultants-feature .feature .text hgroup, #consultants-everyone .feature .text hgroup {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
-#consultants-feature .feature .text {
+#consultants-feature .feature .text,#consultants-everyone .feature .text {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -242,6 +242,13 @@ hgroup h3 {
 #consultants-feature .feature .text .solid {
     background-color: #0468D7;
     color: white;
+}
+
+/* section consultants-everyone */
+
+#consultants-everyone .feature {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 @media (min-width:1024px) {
@@ -343,14 +350,14 @@ hgroup h3 {
         font-size: 1.2rem;
     }
 
-    #consultants-feature .feature {
-        flex-direction: row-reverse;
-        justify-content: center;
+    #consultants-feature .feature , #consultants-everyone .feature{
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        padding: 6rem 9rem;
+        background-color: red;
     }
 
-    #consultants-feature .feature .text {
+    #consultants-feature .feature .text,#consultants-everyone .feature .text {
         max-width: 400px;
     }
 
@@ -365,7 +372,7 @@ hgroup h3 {
         line-height: 1.6;
     }
 
-    #consultants-feature .feature .media img {
+    #consultants-feature .feature .media img ,#consultants-everyone .feature .media img{
         width: 500px;
         max-width: 100%;
         height: auto;
