@@ -252,9 +252,139 @@ hgroup h3 {
 
 /* section consultants-everyone */
 
-#consultants-everyone .feature,#consultants-packages .feature {
+#consultants-everyone .feature,
+#consultants-packages .feature {
     display: flex;
     flex-direction: column-reverse;
+}
+
+#consultants-packages .feature {
+    background: linear-gradient(to top right, #FCFCE2, #F5FBFE);
+}
+
+.insert {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#cta {
+    width: 100%;
+    padding: 6rem 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+#cta div {
+    width: 100%;
+    overflow: hidden;
+}
+
+#insert {
+    width: 100%;
+    background-image: url(./insertbox-backgroundImg.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #042449;
+    color: white;
+    border-radius: 2rem;
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#insert h1 {
+    font-size: 3rem;
+    font-family: font1;
+}
+
+#insert p {
+    font-size: 1.2rem;
+    width: 90%;
+    font-family: font1;
+}
+
+.btns {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0rem;
+}
+
+.btns #btn1 {
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    color: blue;
+    background-color: white;
+    font-family: font1;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.btns #btn2 {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+/* footer */
+
+#big-container {
+    background-color: #F8F9FA;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 4rem;
+    gap: 3rem;
+}
+
+#small-conatainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.small-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: font1;
+}
+
+.small-boxes h3 {
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.small-boxes p {
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-transform: capitalize;
+    color: rgb(77, 73, 73);
+}
+
+.small-conatainer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    padding-top: 4rem;
+}
+
+.small-conatainer2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    font-family: font1;
+    font-size: 1.1rem;
+}
+
+.small-conatainer2 div {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 @media (min-width:1024px) {
@@ -363,18 +493,19 @@ hgroup h3 {
         justify-content: center;
         padding: 3rem 8rem;
         align-items: center;
-        gap: 14rem;
+        gap: 8rem;
     }
 
-    #consultants-feature .feature {
+    #consultants-feature .feature,
+    #consultants-packages .feature {
         flex-direction: row-reverse;
     }
 
     #consultants-feature .feature .text,
-    #consultants-everyone .feature .text
-    {
+    #consultants-everyone .feature .text {
         max-width: 550px;
     }
+
     #consultants-feature .feature .text h3 {
         font-size: 3rem;
         line-height: 1.2;
@@ -389,8 +520,29 @@ hgroup h3 {
     #consultants-feature .feature .media img,
     #consultants-everyone .feature .media img,
     #consultants-packages .feature .media img {
-        width: 500px;
-        max-width: 100%;
+        width: 100%;
         height: auto;
+    }
+
+    #cta div {
+        width: 95%;
+    }
+
+    #insert {
+        background-position-y: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        gap: 1rem;
+    }
+
+    #insert h1 {
+        font-size: 3.7rem;
+    }
+    #small-conatainer{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5rem;
+        font-size: 1.2rem;
     }
 }
